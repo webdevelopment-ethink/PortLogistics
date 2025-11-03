@@ -119,25 +119,25 @@ a {
     transition: all 0.3s ease;
 }
 
-/* Make theme toggle button BLACK in light mode */
+/* Make theme toggle button white background with blue icon in light mode */
 [data-theme="light"] .theme-toggle {
-    background: #000000;
-    border-color: #000000;
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="light"] .theme-toggle svg {
-    fill: #ffffff;
-    stroke: #ffffff;
+    fill: #3b82f6;
+    stroke: #3b82f6;
 }
 
 [data-theme="light"] .theme-toggle:hover {
-    background: #1a1a1a;
-    border-color: #000000;
+    background: #f8fafc;
+    border-color: #3b82f6;
 }
 
 [data-theme="light"] .theme-toggle:hover svg {
-    fill: #ffffff;
-    stroke: #ffffff;
+    fill: #2563eb;
+    stroke: #2563eb;
 }
 
 .theme-toggle:hover svg {
