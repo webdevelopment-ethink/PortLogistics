@@ -121,18 +121,23 @@ a {
 
 /* Make theme toggle button dark/visible in light mode */
 [data-theme="light"] .theme-toggle {
-    background: rgba(0, 0, 0, 0.05);
-    border-color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="light"] .theme-toggle svg {
-    fill: #1e293b;
-    stroke: #1e293b;
+    fill: #0f172a;
+    stroke: #0f172a;
 }
 
 [data-theme="light"] .theme-toggle:hover {
-    background: rgba(0, 0, 0, 0.1);
-    border-color: var(--accent);
+    background: rgba(0, 0, 0, 0.15);
+    border-color: #0f172a;
+}
+
+[data-theme="light"] .theme-toggle:hover svg {
+    fill: var(--accent);
+    stroke: var(--accent);
 }
 
 .theme-toggle:hover svg {
@@ -351,6 +356,13 @@ nav {
     color: #d0a04f;
     border-color: #d0a04f;
     backdrop-filter: blur(10px);
+}
+
+/* Make hero badge blue in light mode */
+[data-theme="light"] .hero-content .badge-accent {
+    background: rgba(59, 130, 246, 0.15);
+    color: #3b82f6;
+    border-color: #3b82f6;
 }
 
 .hero-title {
