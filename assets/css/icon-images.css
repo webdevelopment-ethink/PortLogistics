@@ -67,10 +67,16 @@
     transition: transform 0.3s ease;
 }
 
-/* Icon filter - Make icons white/monochrome */
+/* Icon filter - Make icons white in dark mode, black in light mode */
 .icon-img {
     filter: brightness(0) invert(1);
-    /* This makes all icons pure white */
+    /* This makes all icons pure white in dark mode */
+}
+
+/* Dark icons in light mode for better visibility */
+[data-theme="light"] .icon-img {
+    filter: brightness(0) invert(0);
+    /* This makes all icons black in light mode */
 }
 
 /* Alternative: Keep some icon color but make lighter */
