@@ -1,0 +1,110 @@
+/* ==================== ICON IMAGES STYLING ==================== */
+/* Styles for image-based icons (PNG/SVG) */
+
+.icon-img {
+    display: block;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Icon Sizes */
+.icon-img.icon-sm {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-img.icon-md {
+    width: 60px;
+    height: 60px;
+}
+
+.icon-img.icon-lg {
+    width: 70px;
+    height: 70px;
+}
+
+.icon-img.icon-xl {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+}
+
+/* Icon in service cards */
+.service-card .icon-img {
+    margin-bottom: 1.5rem;
+}
+
+/* Icon in feature cards */
+.feature-card .icon-img {
+    margin-bottom: 1.5rem;
+}
+
+/* Portal tiles icons */
+.portal-tile .icon-img {
+    margin-bottom: 1rem;
+}
+
+/* Hero card icons */
+.info-item .icon-img {
+    flex-shrink: 0;
+}
+
+/* Contact detail icons */
+.contact-detail .icon-img,
+.depot-info-item .icon-img {
+    flex-shrink: 0;
+}
+
+/* Hover effects for icon images */
+.service-card:hover .icon-img,
+.feature-card:hover .icon-img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.portal-tile:hover .icon-img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Icon filter - Make icons white/monochrome */
+.icon-img {
+    filter: brightness(0) invert(1);
+    /* This makes all icons pure white */
+}
+
+/* Alternative: Keep some icon color but make lighter */
+/*
+.icon-img {
+    filter: brightness(1.5) contrast(1.2);
+}
+*/
+
+/* To go back to original colors, comment out the filter above */
+
+/* Fallback if icon is missing */
+.icon-img[alt]:after {
+    content: attr(alt);
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--accent);
+    color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    border-radius: 50%;
+}
+
+/* Loading state */
+.icon-img {
+    background: transparent;
+}
+
+/* Ensure icons display properly in all contexts */
+.icon-img {
+    max-width: 100%;
+    height: auto;
+}
+

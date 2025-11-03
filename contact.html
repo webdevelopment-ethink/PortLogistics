@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | PortGate Logistics</title>
+    <meta name="description" content="Contact PortGate Logistics for depot enquiries, service requests, or general information. Located at 70 Lucinda Drive, Port of Brisbane.">
+    <link rel="stylesheet" href="assets/css/utilities.css">
+    <link rel="stylesheet" href="assets/css/icon-images.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contact">
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">Inside the Port of Brisbane</div>
+            <div class="top-bar-right">
+                <a href="tel:0738955700" class="top-bar-phone">(07) 3895 5700</a>
+                <a href="https://webtracker.portgate.com.au" class="top-bar-link" target="_blank" rel="noopener">Check Cargo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">PORTGATE</a>
+            </div>
+            <nav id="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="facilities.html" class="nav-link">Facilities</a>
+                <a href="compliance.html" class="nav-link">Compliance</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="https://webtracker.portgate.com.au" class="btn btn-primary header-cta" target="_blank" rel="noopener">Check Cargo Availability</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <svg class="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Contact</span>
+                </nav>
+                <h1 class="page-title">Get In Touch</h1>
+                <p class="page-description">Contact us for depot enquiries, service requests, or general information.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- CONTACT FORM -->
+                    <div class="contact-form-wrapper reveal">
+                        <h2>Send Us a Message</h2>
+                        <p class="text-muted" style="margin-bottom: 2rem;">Fill out the form below and we'll get back to you as soon as possible.</p>
+                        
+                        <!-- Success Message -->
+                        <div id="form-success" class="form-message form-success" style="display: none;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <div>
+                                <strong>Message sent successfully!</strong>
+                                <p>Thank you for contacting PortGate Logistics. We'll get back to you as soon as possible.</p>
+                            </div>
+                        </div>
+
+                        <!-- Error Message -->
+                        <div id="form-error" class="form-message form-error" style="display: none;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="12"></line>
+                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                            </svg>
+                            <div>
+                                <strong>Something went wrong!</strong>
+                                <p>Please try again or contact us directly at <a href="mailto:enquiries@portgate.com.au">enquiries@portgate.com.au</a></p>
+                            </div>
+                        </div>
+                        
+                        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                            <!-- Web3Forms Access Key -->
+                            <input type="hidden" name="access_key" value="d86cf0c9-f3c6-453c-9210-742ab53df60b">
+                            
+                            <!-- Optional: Redirect after submission -->
+                            <input type="hidden" name="redirect" value="false">
+                            
+                            <!-- Honeypot Spam Protection -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="general">General Enquiry</option>
+                                    <option value="services">Service Request</option>
+                                    <option value="quote">Quote Request</option>
+                                    <option value="complaint">Complaint or Feedback</option>
+                                    <option value="account">Account Enquiry</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="btn btn-primary btn-lg btn-block">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading" style="display: none;">Sending...</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- CONTACT INFO SIDEBAR -->
+                    <div class="contact-sidebar">
+                        <div class="contact-info-card reveal">
+                            <h3>Contact Details</h3>
+                            <div class="contact-detail">
+                                <img src="assets/img/icons/location.png" alt="Location" class="icon-img icon-sm">
+                                <div class="info-text">
+                                    <strong>ADDRESS</strong>
+                                    <span>70 Lucinda Drive<br>Port of Brisbane QLD 4178</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail">
+                                <img src="assets/img/icons/phone.png" alt="Phone" class="icon-img icon-sm">
+                                <div class="info-text">
+                                    <strong>PHONE</strong>
+                                    <span><a href="tel:0738955700">(07) 3895 5700</a></span>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail">
+                                <img src="assets/img/icons/email.png" alt="Email" class="icon-img icon-sm">
+                                <div class="info-text">
+                                    <strong>EMAIL</strong>
+                                    <span><a href="mailto:enquiries@portgate.com.au">enquiries@portgate.com.au</a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hours-info-card reveal">
+                            <h3>Operating Hours</h3>
+                            <div class="hours-table">
+                                <div class="hours-row">
+                                    <strong>Monday – Friday</strong>
+                                    <span>7:00am – 3:00pm</span>
+                                </div>
+                                <div class="hours-row">
+                                    <strong>Saturday – Sunday</strong>
+                                    <span>Closed</span>
+                                </div>
+                            </div>
+                            <div class="hours-note">
+                                <p><strong>Extended Hours</strong></p>
+                                <p>After-hours services available by prior arrangement. Contact us to discuss your specific requirements.</p>
+                            </div>
+                        </div>
+
+                        <div class="cargo-check-card reveal">
+                            <img src="assets/img/icons/search.png" alt="Search" class="icon-img icon-md" style="margin: 0 auto 1rem;">
+                            <h3>Check Cargo Status</h3>
+                            <p>Track your container freight and cargo in real-time using our web tracker.</p>
+                            <a href="https://webtracker.portgate.com.au" class="btn btn-outline btn-block" target="_blank" rel="noopener">Open Web Tracker</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCATION NOTE -->
+        <section class="section section-alt reveal">
+            <div class="container">
+                <div class="location-note">
+                    <img src="assets/img/icons/ship.png" alt="Ship" class="icon-img icon-xl">
+                    <div class="location-content">
+                        <h3>Located Within the Port of Brisbane Precinct</h3>
+                        <p>Our depot is situated inside the Port of Brisbane estate, providing maximum transport efficiency and direct access to container terminals. This strategic location enables faster cargo turnaround times and reduced cartage costs for our clients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADDITIONAL CONTACT OPTIONS -->
+        <section class="section reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Other Ways to Connect</h2>
+                    <p class="text-muted">Choose the contact method that works best for you</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="contact-method-card">
+                        <img src="assets/img/icons/phone.png" alt="Phone" class="icon-img icon-xl">
+                        <h3>Phone</h3>
+                        <p>Speak directly with our team during business hours for immediate assistance.</p>
+                        <a href="tel:0738955700" class="btn btn-outline">(07) 3895 5700</a>
+                    </div>
+
+                    <div class="contact-method-card">
+                        <img src="assets/img/icons/email.png" alt="Email" class="icon-img icon-xl">
+                        <h3>Email</h3>
+                        <p>Send us detailed enquiries and we'll respond within one business day.</p>
+                        <a href="mailto:enquiries@portgate.com.au" class="btn btn-outline">Send Email</a>
+                    </div>
+
+                    <div class="contact-method-card">
+                        <img src="assets/img/icons/search.png" alt="Search" class="icon-img icon-xl">
+                        <h3>Web Tracker</h3>
+                        <p>Check cargo availability and track your freight status online anytime.</p>
+                        <a href="https://webtracker.portgate.com.au" class="btn btn-outline" target="_blank" rel="noopener">Open Tracker</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content grid grid-4">
+                <div class="footer-section">
+                    <h4>PortGate Logistics</h4>
+                    <p>Container freight station services and depot operations at the Port of Brisbane.</p>
+                    <p class="text-muted">Inside the Port of Brisbane</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>70 Lucinda Drive<br>Port of Brisbane QLD 4178</p>
+                    <p><a href="tel:0738955700">(07) 3895 5700</a></p>
+                    <p><a href="mailto:enquiries@portgate.com.au">enquiries@portgate.com.au</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="services.html">Services</a>
+                    <a href="facilities.html">Facilities</a>
+                    <a href="compliance.html">Compliance</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Operating Hours</h4>
+                    <p><strong>Weekdays:</strong> 7am – 3pm</p>
+                    <p><strong>Weekend:</strong> Closed</p>
+                    <p class="text-muted" style="margin-top: 1rem;">Made for Port of Brisbane operators</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2025 PortGate Logistics LP. All rights reserved.</div>
+                <div class="footer-links">
+                    <a href="compliance.html">Trading Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/form-handler.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/scrollreveal.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
