@@ -128,6 +128,15 @@ a {
     display: none;
 }
 
+/* Default to light mode - show moon icon by default */
+.theme-icon-moon {
+    display: block;
+}
+
+.theme-icon-sun {
+    display: none;
+}
+
 /* ==================== HEADER / NAVIGATION ==================== */
 header {
     position: sticky;
@@ -349,6 +358,18 @@ nav {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+/* Make hero buttons have white text */
+.hero-buttons .btn-outline {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.hero-buttons .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+    color: #ffffff;
 }
 
 .hero-card {
