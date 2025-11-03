@@ -364,6 +364,15 @@ nav {
     letter-spacing: 0.05em;
 }
 
+/* Make hero card text white for better visibility */
+.hero-card .info-text strong {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-card .info-text span {
+    color: #ffffff;
+}
+
 .hero-card-info {
     display: flex;
     flex-direction: column;
