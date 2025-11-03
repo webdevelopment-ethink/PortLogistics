@@ -115,7 +115,24 @@ a {
     width: 24px;
     height: 24px;
     fill: var(--accent);
+    stroke: var(--accent);
     transition: all 0.3s ease;
+}
+
+/* Make theme toggle button dark/visible in light mode */
+[data-theme="light"] .theme-toggle {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light"] .theme-toggle svg {
+    fill: #1e293b;
+    stroke: #1e293b;
+}
+
+[data-theme="light"] .theme-toggle:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: var(--accent);
 }
 
 .theme-toggle:hover svg {

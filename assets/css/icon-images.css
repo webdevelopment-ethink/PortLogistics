@@ -67,7 +67,7 @@
     transition: transform 0.3s ease;
 }
 
-/* Icon filter - Make icons white in dark mode, dark in light mode */
+/* Icon filter - White icons in dark mode (default), dark in light mode */
 .icon-img {
     filter: brightness(0) invert(1);
     /* This makes all icons pure white in dark mode */
@@ -78,6 +78,12 @@
     filter: brightness(0) saturate(0%);
     opacity: 0.75;
     /* This makes all icons dark gray/black in light mode */
+}
+
+/* Ensure hero card icons are white in dark mode */
+[data-theme="dark"] .hero-card .icon-img {
+    filter: brightness(0) invert(1);
+    opacity: 1;
 }
 
 /* Alternative: Keep some icon color but make lighter */
