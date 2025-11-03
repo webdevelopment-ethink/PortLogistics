@@ -829,8 +829,8 @@ nav {
 .info-block {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    gap: 5rem;
+    align-items: start;
 }
 
 .info-block-content h2 {
@@ -840,14 +840,14 @@ nav {
     line-height: 1.2;
 }
 
-.info-block-content p {
-    color: var(--muted);
-    margin-bottom: 1.5rem;
+.info-block-content > p {
+    color: var(--text);
+    margin-bottom: 2rem;
     line-height: 1.7;
     font-size: 1.0625rem;
 }
 
-/* Feature list styling */
+/* Feature list styling - clean and minimal */
 .feature-list {
     list-style: none;
     padding: 0;
@@ -855,26 +855,20 @@ nav {
 }
 
 .feature-list li {
-    margin-bottom: 1.25rem;
-    padding-left: 1.75rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
     position: relative;
-    color: var(--muted);
-    line-height: 1.7;
-    font-size: 1rem;
-}
-
-.feature-list li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-    font-weight: 900;
-    font-size: 1.25rem;
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 1.0625rem;
+    padding: 0.75rem 0;
 }
 
 .feature-list li strong {
-    color: var(--text);
+    color: var(--accent);
     font-weight: 700;
+    display: inline;
+    margin-right: 0.5rem;
 }
 
 .info-block-content .btn {
@@ -958,8 +952,17 @@ nav {
     }
 
     .feature-list li {
-        font-size: 0.9375rem;
-        margin-bottom: 1rem;
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+        padding: 0.5rem 0;
+    }
+    
+    .info-block-content h2 {
+        font-size: 1.75rem;
+    }
+    
+    .info-block-content > p {
+        font-size: 1rem;
     }
 }
 
