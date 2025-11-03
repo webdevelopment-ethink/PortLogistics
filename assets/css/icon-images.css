@@ -80,17 +80,21 @@
     /* This makes all icons dark gray/black in light mode */
 }
 
-/* Ensure hero card icons are white in dark mode */
-[data-theme="dark"] .hero-card .icon-img,
+/* Force hero card icons to ALWAYS be white */
 .hero-card .icon-img {
     filter: brightness(0) invert(1) !important;
     opacity: 1 !important;
 }
 
-/* Keep icons dark in light mode for hero card */
+/* Override - keep hero card icons white even in light mode */
 [data-theme="light"] .hero-card .icon-img {
-    filter: brightness(0) saturate(0%) !important;
-    opacity: 0.75 !important;
+    filter: brightness(0) invert(1) !important;
+    opacity: 1 !important;
+}
+
+[data-theme="dark"] .hero-card .icon-img {
+    filter: brightness(0) invert(1) !important;
+    opacity: 1 !important;
 }
 
 /* Alternative: Keep some icon color but make lighter */

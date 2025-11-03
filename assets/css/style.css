@@ -119,25 +119,25 @@ a {
     transition: all 0.3s ease;
 }
 
-/* Make theme toggle button dark/visible in light mode */
+/* Make theme toggle button BLACK in light mode */
 [data-theme="light"] .theme-toggle {
-    background: rgba(0, 0, 0, 0.08);
-    border-color: rgba(0, 0, 0, 0.3);
+    background: #000000;
+    border-color: #000000;
 }
 
 [data-theme="light"] .theme-toggle svg {
-    fill: #0f172a;
-    stroke: #0f172a;
+    fill: #ffffff;
+    stroke: #ffffff;
 }
 
 [data-theme="light"] .theme-toggle:hover {
-    background: rgba(0, 0, 0, 0.15);
-    border-color: #0f172a;
+    background: #1a1a1a;
+    border-color: #000000;
 }
 
 [data-theme="light"] .theme-toggle:hover svg {
-    fill: var(--accent);
-    stroke: var(--accent);
+    fill: #ffffff;
+    stroke: #ffffff;
 }
 
 .theme-toggle:hover svg {

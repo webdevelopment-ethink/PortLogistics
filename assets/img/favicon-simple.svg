@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Background -->
-  <rect width="64" height="64" fill="#d0a04f" rx="8"/>
+  <!-- Background - Blue -->
+  <rect width="64" height="64" fill="#3b82f6" rx="8"/>
   
-  <!-- Letter P -->
-  <path d="M 20 16 L 20 48 L 28 48 L 28 36 L 40 36 C 45 36 48 32 48 27 C 48 22 45 19 40 19 L 40 16 Z M 28 23 L 38 23 C 40 23 42 24 42 27 C 42 30 40 31 38 31 L 28 31 Z" fill="#0f1012"/>
+  <!-- Letter P - White -->
+  <path d="M 20 16 L 20 48 L 28 48 L 28 36 L 40 36 C 45 36 48 32 48 27 C 48 22 45 19 40 19 L 40 16 Z M 28 23 L 38 23 C 40 23 42 24 42 27 C 42 30 40 31 38 31 L 28 31 Z" fill="#ffffff"/>
 </svg>
